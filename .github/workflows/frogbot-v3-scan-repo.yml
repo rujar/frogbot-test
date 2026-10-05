@@ -15,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Scan Repository
     steps:
-      - uses: actions/checkout@v4
       - uses: jfrog/frogbot@v3
         env:
           JF_URL: ${{ secrets.JF_URL }}
